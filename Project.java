@@ -7,7 +7,7 @@ class Project{
     private String[] Skill;
     private int[] SkillLevel;
 
-    public void Project(String Name, int daysR,int score, int bestB,int numOfSkills, String[] pSkill, int[] pSkillLevel ){
+    public Project(String Name, int daysR,int score, int bestB,int numOfSkills, String[] pSkill, int[] pSkillLevel ){
         this.name= Name;
         this.daysRequired = daysR;
         this.bestBefore= bestB;
