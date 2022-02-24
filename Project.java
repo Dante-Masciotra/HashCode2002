@@ -1,5 +1,11 @@
 class Project{
-    public static void main(String[] args) {
-        
+    private int daysRequired;
+    private int bestBefore;
+    private int daysWorkedon;
+    private int numCon;
+
+
+    public void Project(){
+
     }
 }
