@@ -1,10 +1,10 @@
 class Contributor {
     private String contributorName;
     private int numOfContributorSkills;
-    private String contributorSkill[];
-    private int contributerSkillLevel[];
+    private String[] contributorSkill;
+    private int[] contributerSkillLevel;
     
-    public void Contributor(String cName, int numOfCSkills, String cSkill[], int cSkillLevel[]){
+    public void Contributor(String cName, int numOfCSkills, String[] cSkill, int[] cSkillLevel){
         this.contributorName = cName;
         this.numOfContributorSkills = numOfCSkills;
         this.contributorSkill = cSkill;
