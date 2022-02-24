@@ -17,6 +17,10 @@ class Project{
         this. SkillLevel =pSkillLevel;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public int getBestBefore() {
         return bestBefore;
     }
