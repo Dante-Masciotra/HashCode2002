@@ -1,16 +1,20 @@
 class Project{
+    private String name;
     private int daysRequired;
     private int bestBefore;
     private int score;
     private int numRole;
-    Object[][] roles;
+    private String[] Skill;
+    private int[] SkillLevel;
 
-    public void Project(int daysR,int score, int bestB, int roles ){
+    public void Project(String Name, int daysR,int score, int bestB,int numOfSkills, String[] pSkill, int[] pSkillLevel ){
+        this.name= Name;
         this.daysRequired = daysR;
         this.bestBefore= bestB;
+        this.numRole = numOfSkills;
         this.score = score;
-        this.numRole=roles;
-        this.roles = new String[numRole][2];
+        this. Skill =pSkill;
+        this. SkillLevel =pSkillLevel;
     }
 
     public int getBestBefore() {
@@ -23,20 +27,17 @@ class Project{
 
     public int getRoleLevel(String RoleName){
         int level = 0;
-        for(int i=0;i<roles.length;i++){
-            if(RoleName.equals(roles[i][0])){
-                level = (int) roles[i][1];
+        for(int i=0;i<Skill.length;i++){
+            if(RoleName.equals(Skill[i])){
+                level = SkillLevel[i];
+                break;
             }
         }
         return level;
     }
 
-    public String[] getRoles(){
-        String[] role = new String[numRole];
-        for(int i=0;i<roles.length;i++){
-                role[i] = (String)roles[i][0];
-        }
-        return role;
+    public String getRoles(int index){
+        return Skill[index];
     }
 
 }
